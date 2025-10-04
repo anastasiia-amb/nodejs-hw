@@ -17,9 +17,9 @@ app.use(logger);
 
 app.use(notesRoutes);
 
-app.get('/test-error', () => {
-  throw new Error('Simulated server error');
-});
+// app.get('/test-error', () => {
+//   throw new Error('Simulated server error');
+// });
 
 app.use(notFoundHandler);
 app.use(errorHandler);
